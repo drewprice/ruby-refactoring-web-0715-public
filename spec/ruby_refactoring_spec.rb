@@ -55,9 +55,9 @@ describe "RubyRefactoring" do
 
       it 'takes the dog on a walk' do
         steven.walk
-        expect(steven.dog.leash).to eq(true)
-        expect(steven.dog.plastic_bag).to eq(true)
-        expect(steven.walking?).to eq(true)
+        expect(steven.leash).to eq(true)
+        expect(steven.plastic_bag).to eq(true)
+        expect(steven.walking).to eq(true)
       end
     end
 
@@ -69,9 +69,9 @@ describe "RubyRefactoring" do
 
       it 'takes the dog to the vet' do
         steven.vet_checkup
-        expect(steven.dog.leash).to eq(true)
-        expect(steven.dog.plastic_bag).to eq(true)
-        expect(alfi.vet_checkup?(steven)).to eq(true)
+        expect(steven.leash).to eq(true)
+        expect(steven.plastic_bag).to eq(true)
+        expect(steven.vet_checkup).to eq(true)
       end
     end
 
@@ -81,11 +81,11 @@ describe "RubyRefactoring" do
       end
 
       it 'sets leash attribute to true' do
-        expect(steven.dog.leash).to eq(true)
+        expect(steven.leash).to eq(true)
       end
 
       it 'sets plastic_bag attribute to true' do
-        expect(steven.dog.plastic_bag).to eq(true)
+        expect(steven.plastic_bag).to eq(true)
       end
     end
   end

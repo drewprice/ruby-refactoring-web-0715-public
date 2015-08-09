@@ -16,10 +16,6 @@ class Owner
     self.walking = true
   end
 
-  def walking?
-    walking
-  end
-
   def vet_checkup
     prepare_items
     self.vet_checkup = true

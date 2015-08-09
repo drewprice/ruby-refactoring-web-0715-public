@@ -11,23 +11,7 @@ class Dog
     'Woof!'
   end
 
-  def leash
-    owner.leash
-  end
-
-  def plastic_bag
-    owner.plastic_bag
-  end
-
-  def walking?
-    owner.walking
-  end
-
-  def vet_checkup(owner)
-    owner.vet_checkup
-  end
-
-  def vet_checkup?(owner)
+  def vet_checkup?
     owner.vet_checkup
   end
 end
